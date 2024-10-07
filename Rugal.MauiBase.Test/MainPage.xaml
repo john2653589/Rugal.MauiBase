@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BasePage:ModelPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:BasePage="clr-namespace:Rugal.MauiBase.Core.Page;assembly=Rugal.MauiBase.Core"
+                    xmlns:App="clr-namespace:Rugal.MauiBase.Test"
+                    x:TypeArguments="App:MainPageModel"
+                    x:DataType="App:MainPageModel"
+                    x:Class="Rugal.MauiBase.Test.MainPage">
+    <StackLayout>
+
+        <Label x:Name="Label_TestGet" />
+        <Label x:Name="Label_TestPost" />
+
+    </StackLayout>
+</BasePage:ModelPage>
