@@ -1,11 +1,10 @@
-﻿namespace Rugal.MauiBase.Core.ApplicationBase
+﻿namespace Rugal.MauiBase.Core.ApplicationBase;
+
+public class ProviderApp : Application
 {
-    public class ProviderApp : Application
+    public IServiceProvider Provider { get; private set; }
+    public ProviderApp(IServiceProvider Provider)
     {
-        public IServiceProvider Provider { get; private set; }
-        public ProviderApp(IServiceProvider Provider)
-        {
-            this.Provider = Provider;
-        }
+        this.Provider = Provider;
     }
 }
