@@ -17,6 +17,8 @@ public class ApiClientSetting
         get => _Domain;
         set
         {
+            if (string.IsNullOrWhiteSpace(value))
+                return;
             _Domain = value.TrimEnd('/') + '/';
         }
     }

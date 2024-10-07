@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Rugal.ConfigFiller.Maui.Extention;
+﻿using Rugal.ConfigFiller.Maui.Extention;
 using Rugal.DotNetLib.Core.ValueParse;
 using Rugal.MauiBase.Core.Model;
 using Rugal.MauiBase.Core.Service;
