@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Rugal.ConfigFiller.Maui.Extention;
+using Rugal.DotNetLib.Core.ValueParse;
 using Rugal.MauiBase.Core.Model;
 using Rugal.MauiBase.Core.Service;
 
@@ -9,8 +10,11 @@ public static class StartupExtention
 {
     public static MauiAppBuilder UseMauiBaseCore(this MauiAppBuilder Builder)
     {
-        Builder.Services.AddSingleton<HttpClient>();
-        Builder.Services.AddTransient<ApiClient>();
+        Builder.Services
+            .AddDotNetLib_ValueParse()
+            .AddSingleton<HttpClient>()
+            .AddTransient<ApiClient>();
+
         Builder.UseConfigFiller();
         Builder.Services.AddSingleton(new ApiClientSetting()
         {

@@ -11,7 +11,7 @@ namespace Rugal.MauiBase.Test
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-            builder
+            builder 
                 .UseMauiApp<App>()
                 .UseMauiBaseCore()
                 .ConfigureFonts(fonts =>
